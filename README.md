@@ -17,7 +17,7 @@ Support [NandLand via Patreon](https://www.patreon.com/user?u=2732133)
 
 ## License
 
-Request ongoing to NandLand.
+MIT License, Copyright (c) 2013-2020 Nandland.com
 
 ## GoBoard Features
 
@@ -60,7 +60,9 @@ Other video related to FPGA can be found at [NandLand Youtube Channel](https://w
 
 - [Test your new GoBoard](./docs/test_new_goboard.md)
 - [iCEcube Download, Install and License](./docs/install.md)
+- [Programmer and Deployment Tool](./docs/install_deployment.md)
 - [GoBoard iCEcube2 new project](./docs/icecube_new_project.md)
+- [Build Process](./docs/build_process.md)
 
 ### Projects
 
