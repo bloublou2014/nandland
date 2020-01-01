@@ -56,6 +56,21 @@ Other video related to FPGA can be found at [NandLand Youtube Channel](https://w
 
 ## Documentation
 
+### Startup 
+
 - [Test your new GoBoard](./docs/test_new_goboard.md)
-- [iCEcube Download and Install](./docs/install.md)
-- [GoBoard iCEcube2 parameters](./docs/goboard_icecube_definition.md)
+- [iCEcube Download, Install and License](./docs/install.md)
+- [GoBoard iCEcube2 new project](./docs/icecube_new_project.md)
+
+### Projects
+
+- [Project 1 - Switches and LEDs](./docs/project_1.md)
+- [Project 2 - The Look-Up Table (LUT)](./docs/project_2.md)
+- [Project 3 - The Flip-Flop (AKA Register)](./docs/project_3.md)
+- [Project 4 - Debounce A Switch](./docs/project_4.md)
+- [Project 5 - Seven Segment Display](./docs/project_5.md)
+- [Project 6 - Simulating LEDs Blinking](./docs/project_6.md)
+- [Project 7 - UART Receiver](./docs/project_7.md)
+- [Project 8 - UART Transmitter (Loopback)](./docs/project_8.md)
+- [Project 9 - Introduction to VGA](./docs/project_9.md)
+- [Project 10 - Pong! (On your VGA Monitor)](./docs/project_10.md)
