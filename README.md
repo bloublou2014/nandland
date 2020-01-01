@@ -5,9 +5,19 @@ in order to add documentation and additional information about GoBoard developme
 
 Contains all project code found on [www.nandland.com](https://www.nandland.com)
 
-GoBoard can be purchased at [NandLand Go Board Page](https://www.nandland.com/goboard/introduction.html).
-
 Support [NandLand via Patreon](https://www.patreon.com/user?u=2732133)
+
+![GoBoard](./docs/img/final_front_view_captions3.jpg)
+
+## Requirements
+
+- GoBoard can be purchased at [NandLand Go Board Page](https://www.nandland.com/goboard/introduction.html).
+- a Micro USB to USB cable
+- a Computer under Linux or Windows for iCEcube2
+
+## License
+
+Request ongoing to NandLand.
 
 ## GoBoard Features
 
@@ -20,12 +30,6 @@ Support [NandLand via Patreon](https://www.patreon.com/user?u=2732133)
 - External Connector (PMOD)
 - 25 MHz on-board clock
 - 1 Mb Flash for booting up your FPGA
-
-## Required Software
-
-Refer to Video [iCEcube2 Installation and Overview](https://www.youtube.com/watch?v=nfB8-8JfVFE&t=4s):
-- Download [Lattice Semiconductor iCEcube2 Software Here](https://www.latticesemi.com/en/Products/DesignSoftwareAndIP/FPGAandLDS/iCEcube2)  
-- Generate a [Lattice Semiconductor iCEcube2 Free Licence Here](https://www.latticesemi.com/Support/Licensing/DiamondAndiCEcube2SoftwareLicensing/iceCube2) 
 
 ## Youtube Videos
 
@@ -52,3 +56,6 @@ Other video related to FPGA can be found at [NandLand Youtube Channel](https://w
 
 ## Documentation
 
+- [Test your new GoBoard](./docs/test_new_goboard.md)
+- [iCEcube Download and Install](./docs/install.md)
+- [GoBoard iCEcube2 parameters](./docs/goboard_icecube_definition.md)

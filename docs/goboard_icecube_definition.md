@@ -1,0 +1,1 @@
+# GoBoard iCEcube2 parameters
