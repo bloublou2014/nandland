@@ -1,6 +1,6 @@
-# Test your new GoBoar
+# Test your new GoBoard
 
-Related NandLand Youtube video: [Nandland Go Board - Watch This When You Receive Your Board - at 2m0s](https://youtu.be/wWMIY9kjlJ0?t=121)
+Related NandLand Youtube video: [Nandland Go Board - Watch This When You Receive Your Board](https://youtu.be/wWMIY9kjlJ0)
 
 ## Prerequisites
 
@@ -18,6 +18,8 @@ before and after connecting your GoBoard micro USB Cable to your PC:
 ![Windows Device Manager](img/test_new_goboard/com_port_windows.png)  
 
 ### Virtual Com Port Driver Install
+
+Related NandLand Youtube video: [Nandland Go Board - Watch This When You Receive Your Board - at 2m0s](https://youtu.be/wWMIY9kjlJ0?t=121)
 
 If you don't see your COM Port, download and install Virtual Com Port Driver:  
 
