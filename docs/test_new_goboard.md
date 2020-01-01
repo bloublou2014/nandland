@@ -2,6 +2,19 @@
 
 Related NandLand Youtube video: [Nandland Go Board - Watch This When You Receive Your Board](https://youtu.be/wWMIY9kjlJ0)
 
+## Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [COM Port](#com-port)
+  - [Windows 10](#windows-10)
+  - [Virtual Com Port Driver Install](#virtual-com-port-driver-install)
+- [Tests](#tests)
+  - [Switch and Leds](#switch-and-leds)
+  - [Test COM Connection](#test-com-connection)
+    - [Tera Term VT config](#tera-term-vt-config)
+    - [Putty config](#putty-config)
+  - [Test VGA](#putty-config)
+
 ## Prerequisites
 
 - a brand new GoBoard (eg: one that you never erased/reprogrammed)
@@ -110,11 +123,11 @@ This will save your setup for the next time to avoid reconfiguring it.
 
 ### Test VGA
 
-Related Youtube Video[Nandland Go Board - Watch This When You Receive Your Board - at 4m50s](https://youtu.be/wWMIY9kjlJ0?t=290)
+Related Youtube video: [Nandland Go Board - Watch This When You Receive Your Board - at 4m50s](https://youtu.be/wWMIY9kjlJ0?t=290)
 
 - Connect via COM port to your GoBoard 
 - Connect a VGA cable to your GoBoard to your monitor
-- Open your Terminal program (eg: Tera Term or Putty)
+- Open your Terminal program (Tera Term or Putty)
 - Type `12345` in sequence, you should see on your monitor:
 
 ![Test VGA](./img/test_new_goboard/vga_test.gif)
