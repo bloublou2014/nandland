@@ -76,12 +76,13 @@ There will actually be a physical connection inside the FPGA between these two p
 You need to remember that the code you are writing is designing a physical circuit inside the FPGA. 
 This particular circuit is pretty simple, but it's still a circuit!
 
+
 ### VHDL
 
 ```vhdl
 library ieee;
 use ieee.std_logic_1164.all;
- 
+
 entity Switches_To_LEDs is
   port (
     -- Push-Button Switches:
@@ -89,7 +90,7 @@ entity Switches_To_LEDs is
     i_Switch_2 : in std_logic;
     i_Switch_3 : in std_logic;
     i_Switch_4 : in std_logic;
-     
+
     -- LED Pins:
     o_LED_1 : out std_logic;
     o_LED_2 : out std_logic;
@@ -97,33 +98,37 @@ entity Switches_To_LEDs is
     o_LED_4 : out std_logic
     );
 end entity Switches_To_LEDs;
- 
+
 architecture RTL of Switches_To_LEDs is
 begin
+  -- assign input switches to output leds
   o_LED_1 <= i_Switch_1;
   o_LED_2 <= i_Switch_2;
-  o_LED_3 <= i_Switch_3; 
+  o_LED_3 <= i_Switch_3;
   o_LED_4 <= i_Switch_4;
 end RTL;
 ```
+
+> VHDL comment line starts with `-- `
 
 Let's talk about the VHDL code above. Perhaps the first thing you might notice if you compare the Verilog code to 
 the VHDL code is that the VHDL code is a bit longer. This is a common theme. VHDL generally takes more typing to 
 accomplish the same task. The first two lines of this code tell the tools about which libraries and packages you are 
 using in your code. Take it for granted that these two lines will likely be in every single piece of VHDL you ever write.
- For now, don't worry about what they're actually doing, just put them there.
+For now, don't worry about what they're actually doing, just put them there.
 
 The next keyword you encounter is `entity`. The entity of a design can be thought of as the interface to the outside
-world. Entity and `architecture` are the two VHDL keywords that define the functionality of some block of code. Together, 
- an entity and architecture make up some piece of functionality in your FPGA design. A single entity/architecture 
- combination can contain all of the code you need, such as the code above, or they can instantiate other entities. 
- More complicated designs will create levels of hierarchy by having many entity/architectures.
+world. `entity` and `architecture` are the two VHDL keywords that define the functionality of some block of code. 
+Together, an `entity` and `architecture` make up some piece of functionality in your FPGA design. 
+A single entity/architecture combination can contain all of the code you need, such as the code above,
+or they can instantiate other entities. 
+More complicated designs will create levels of hierarchy by having many entity/architectures.
 
 Next, you need to specify any signals that are on this interface after using the `port` keyword. Once you give the signals
- a name (e.g. `i_Switch_1`), you need to specify the direction: `in`, `out`, or `inout` (used rarely). After that,
+a name (e.g. `i_Switch_1`), you need to specify the direction: `in`, `out`, or `inout` (used rarely). After that,
 give your signals a type. `std_logic` is the most prevalent type in VHDL and can be thought of as a bit containing 0 or 1 
- (though it can actually have more values than just that as we will see later). These inputs and outputs are going to 
- be connected to specific pins on the Go Board. This connection is done later (and is not part of the VHDL code).
+(though it can actually have more values than just that as we will see later). These inputs and outputs are going to 
+be connected to specific pins on the Go Board. This connection is done later (and is not part of the VHDL code).
 
 After the architecture, you need to use the `<=` **assignment symbol**. An assignment is used to connect two signals 
 together. Note that if you try to just use a normal assignment like = as used in C, you'll get a tool error. Once all 
@@ -136,5 +141,14 @@ There will actually be a physical connection inside the FPGA between these two p
 You need to remember that the code you are writing is designing a physical circuit inside the FPGA.
 This particular circuit is pretty simple, but it's still a circuit!
 
-## Building your FPGA design
+## Building your design and Programming your FPGA
 
+See [Build Process and Programming your FPGA documentation](./build_process.md)
+
+## Go Board Project 1 Completion!
+
+Try pushing a button! LEDs blink! 
+
+**Congratulations, you've built your first FPGA project!**
+
+![Project 1 pushing buttons](./img/project_1/project1_pushing_buttons.gif)

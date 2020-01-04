@@ -156,6 +156,8 @@ Make sure to select **Family** as `SPI Serial Flash`, **Vendor** as `Micron` and
 
 Now click **Design** and select **Program**:
 
+> Caution: No serial terminal (Tera Term or Putty) should be running at the same time as Diamon Programmer
+
 ![Diamond Programmer design and program](./img/build_process/dp_design_program.png)
 
 If everything was done correctly, you should see `INFO - Operation Successful`. 
