@@ -3,6 +3,8 @@
 - Related NandLand Youtube video: [Nandland Go Board Project 1 - Switches and LEDs](https://www.youtube.com/watch?v=l_eo21vHxw0)
 - Original [Post at Nandland.com](https://www.nandland.com/goboard/your-first-go-board-project.html). 
 
+[![Nandland Go Board Project 1 - Switches and LEDs](http://img.youtube.com/vi/l_eo21vHxw0/0.jpg)](https://www.youtube.com/watch?v=l_eo21vHxw0)
+
 ## Goals
 
 Now it's time to get cracking! The first project that we are going to do is going to be as simple as possible.
