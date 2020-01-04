@@ -227,8 +227,6 @@ endmodule
 ```
 Preconfigured project is located in [projecs/project_2/verilog/Project2_OR_Gate_Project](../projects/project_2/verilog/Project2_Or_Gate_LUT)
 
-> In Verilog, `OR` operator is represented by a pipe `|` 
-
 ### VHDL
 
 ```vhdl
@@ -258,9 +256,6 @@ begin
 end RTL;
 ```
 Preconfigured project is located in [projecs/project_2/vhdl/Project2_OR_Gate_Project](../projects/project_2/vhdl/Project2_OR_Gate_Project)
-
-> In Verilog, `OR` operator is represented by a `or`
-
 
 ### AND, NAND, OR and NOR Implementation
 
@@ -380,7 +375,7 @@ Preconfigured project is located in [projecs/project_2/vhdl/ANON_LUT](../project
 #### Build and Test
 
 
-
+**in progress**
 
 
 ### Implement a XOR and NXOR
@@ -398,6 +393,7 @@ Program an `XOR`:
 
 
 
+**in progress**
 
 
  
