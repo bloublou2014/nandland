@@ -43,10 +43,6 @@ MIT License, Copyright (c) 2013-2020 Nandland.com
 - [iCEcube2 Installation and Overview](https://www.youtube.com/watch?v=nfB8-8JfVFE&t=4s)
 - [Nandland Go Board Project 1 - Switches and LEDs](https://www.youtube.com/watch?v=l_eo21vHxw0)
 - [Nandland Go Board Project 2 - The Look-Up Table (LUT)](https://www.youtube.com/watch?v=bps5v5OeJkA)
-  - Additional Exercises
-     - [Initialize D2,D3 and D4]()
-     - [AND, NAND, OR and NOR]()
-     - [XOR and NXOR]()
 - [Nandland Go Board Project 3 - The Flip-Flop (AKA Register)](https://www.youtube.com/watch?v=_7K-ty3Mffg&t=1056s)
 - [Nandland Go Board Project 4 - Debounce A Switch](https://www.youtube.com/watch?v=plGDQDyLDR0)
 - [Nandland Go Board Project 5 - Seven Segment Display](https://www.youtube.com/watch?v=iT9MVuIZFJ8)
@@ -74,6 +70,10 @@ Other video related to FPGA can be found at [NandLand Youtube Channel](https://w
 
 - [Project 1 - Switches and LEDs](./docs/project_1.md)
 - [Project 2 - The Look-Up Table (LUT)](./docs/project_2.md)
+  - Additional Exercises
+     - [Initialize D2,D3 and D4](./docs/project_2.md#and-gate-with-led-d2-d3-and-d4-initialization)
+     - [AND, NAND, OR and NOR](./docs/project_2.md#implement-and-nand-or-and-nor)
+     - [XOR and NXOR](./docs/project_2.md#implement-a-xor-and-nxor) 
 - [Project 3 - The Flip-Flop (AKA Register)](./docs/project_3.md)
 - [Project 4 - Debounce A Switch](./docs/project_4.md)
 - [Project 5 - Seven Segment Display](./docs/project_5.md)

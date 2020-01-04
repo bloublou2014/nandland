@@ -262,7 +262,7 @@ Preconfigured project is located in [projecs/project_2/vhdl/Project2_OR_Gate_Pro
 > In Verilog, `OR` operator is represented by a `or`
 
 
-### Implement AND, NAND, OR and NOR
+### AND, NAND, OR and NOR Implementation
 
 Program an `AND`, `NAND`, `OR` and `NOR` using switches `SW1` and `SW2` as input:
 
