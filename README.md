@@ -62,7 +62,7 @@ Other video related to FPGA can be found at [NandLand Youtube Channel](https://w
 - [iCEcube Download, Install and License](./docs/install.md)
 - [Programmer and Deployment Tool](./docs/install_deployment.md)
 - [GoBoard iCEcube2 new project](./docs/icecube_new_project.md)
-- [Build Process](./docs/build_process.md)
+- [Build Process and Programming your FPGA](./docs/build_process.md)
 
 ### Projects
 
