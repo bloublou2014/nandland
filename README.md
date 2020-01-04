@@ -43,6 +43,10 @@ MIT License, Copyright (c) 2013-2020 Nandland.com
 - [iCEcube2 Installation and Overview](https://www.youtube.com/watch?v=nfB8-8JfVFE&t=4s)
 - [Nandland Go Board Project 1 - Switches and LEDs](https://www.youtube.com/watch?v=l_eo21vHxw0)
 - [Nandland Go Board Project 2 - The Look-Up Table (LUT)](https://www.youtube.com/watch?v=bps5v5OeJkA)
+  - Additional Exercises
+     - [Initialize D2,D3 and D4]()
+     - [AND, NAND, OR and NOR]()
+     - [XOR and NXOR]()
 - [Nandland Go Board Project 3 - The Flip-Flop (AKA Register)](https://www.youtube.com/watch?v=_7K-ty3Mffg&t=1056s)
 - [Nandland Go Board Project 4 - Debounce A Switch](https://www.youtube.com/watch?v=plGDQDyLDR0)
 - [Nandland Go Board Project 5 - Seven Segment Display](https://www.youtube.com/watch?v=iT9MVuIZFJ8)

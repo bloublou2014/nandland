@@ -27,8 +27,8 @@ switch is pushed.
 
 ![Project 1 Goals](./img/project_1/goals.png)
  
-The image shows what this looks like. When Switch 1 (SW1) is pushed down on the Go Board, we want D1 to light up. 
-When the button SW1 is released, D1 should turn off. This is a simple FPGA design, but going through the code 
+The image shows what this looks like. When Switch 1 `SW1` is pushed down on the Go Board, we want LED `D1` to light up. 
+When the button `SW1` is released, LED `D1` should turn off. This is a simple FPGA design, but going through the code 
 and the build process will get you comfortable with everything before we get to more complicated designs.
 
 ## Project Design
