@@ -1,7 +1,7 @@
 # Project 1 - Switches and LEDs
 
-Related NandLand Youtube video: [Nandland Go Board Project 1 - Switches and LEDs](https://www.youtube.com/watch?v=l_eo21vHxw0)
-Original [Post at Nandland.com](https://www.nandland.com/goboard/your-first-go-board-project.html). 
+- Related NandLand Youtube video: [Nandland Go Board Project 1 - Switches and LEDs](https://www.youtube.com/watch?v=l_eo21vHxw0)
+- Original [Post at Nandland.com](https://www.nandland.com/goboard/your-first-go-board-project.html). 
 
 ## Goals
 
@@ -38,7 +38,6 @@ The answers for both Verilog and VHDL are shown below.
 ### Verilog
 
 ```verilog
-# Verilog Code - Switches_To_LEDs.v
 module Switches_To_LEDs
   (input i_Switch_1,  
    input i_Switch_2,
