@@ -2,10 +2,12 @@
 
 - Related NandLand Youtube video: [Nandland Go Board Project 1 - Switches and LEDs](https://www.youtube.com/watch?v=l_eo21vHxw0)
 - Original [Post at Nandland.com](https://www.nandland.com/goboard/your-first-go-board-project.html). 
+- Preconfigured project is located in [projecs/project_1](../projects/project_1)
+- Precompiled Bin is located in [projecs/project_1/bin](../projects/project_1/bin)
 
 [![Nandland Go Board Project 1 - Switches and LEDs](http://img.youtube.com/vi/l_eo21vHxw0/0.jpg)](https://www.youtube.com/watch?v=l_eo21vHxw0)
 
-## Goals
+## Project Description
 
 Now it's time to get cracking! The first project that we are going to do is going to be as simple as possible.
 All we are going to do is program the FPGA to perform one task: 
@@ -57,6 +59,9 @@ module Switches_To_LEDs
  
 endmodule
 ```
+Preconfigured project is located in [projecs/project_1/verilog/Project1_Switches_To_LEDs](../projects/project_1/verilog/Project1_Switches_To_LEDs)
+
+> Verilog filename must be the same (case sensitive) as module's name.
 
 Let's talk about the Verilog code above. The first keyword you encounter is `module`. Modules are the blocks of code 
 that perform some functionality. Modules can contain all of the code you need, such as the code above, or they can 
@@ -109,8 +114,10 @@ begin
   o_LED_4 <= i_Switch_4;
 end RTL;
 ```
+Preconfigured project is located in [projecs/project_1/vhdl/Project1_Switches_To_LEDs](../projects/project_1/vhdl/Project1_Switches_To_LEDs)
 
 > VHDL comment line starts with `-- `
+> Last line in `port` section does not end with `;`
 
 Let's talk about the VHDL code above. Perhaps the first thing you might notice if you compare the Verilog code to 
 the VHDL code is that the VHDL code is a bit longer. This is a common theme. VHDL generally takes more typing to 
