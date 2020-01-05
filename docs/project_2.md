@@ -5,6 +5,29 @@
 - Preconfigured project is located in [projecs/project_2](../projects/project_2)
 - Precompiled Bin is located in [projecs/project_2/bin](../projects/project_2/bin)
 
+## Table of Contents
+
+- [How Boolean Algebra is Actually Performed on an FPGA](#building-your-fpga-design)
+- [Project Description](#project-description)
+  - [Verilog](#verilog)
+  - [VHDL](#vhdl)
+  - [Building your design and Programming your FPGA](#building-your-design-and-programming-your-fpga)
+  - [Tests](#tests)
+- [Unused Output State](#unused-output-state)
+- [Additional Exercises](#additional-exercises)
+  - [AND Gate with LED D2, D3 and D4 Initialization](#and-gate-with-led-d2-d3-and-d4-initialization)
+    - [Verilog](#verilog-1)
+    - [VHDL](#vhdl-1)
+    - [Build and Test](#build-and-test)
+  - [AND, NAND, OR and NOR Implementation](#and-nand-or-and-nor-implementation)
+    - [Verilog](#verilog-2)
+    - [VHDL](#vhdl-2)
+    - [Build and Test](#build-and-test-1)
+  - [XOR and XNOR Implementation](#xor-and-xnor-implementation)
+    - [Verilog](#verilog-3)
+    - [VHDL](#vhdl-3)
+    - [Build and Test](#build-and-test-2)
+
 ## How Boolean Algebra is Actually Performed on an FPGA
 
 Have you ever wondered how an AND gate actually works inside your FPGA? An AND gate is a type of logic circuit 
@@ -83,7 +106,7 @@ We are creating an `AND` gate! This is a very simple usage of a Look-Up Table. O
 be needed from the 4-input LUT. The tools will take care of all of this for you. 
 On this page you'll find both the Verilog and the VHDL code for this design. 
 
-## Verilog
+### Verilog
 
 Let's look at the Verilog code for this design.
 
@@ -104,7 +127,7 @@ This is known as a [*bitwise operator*](https://www.nandland.com/verilog/example
 In the code above, `o_LED_1` will be 1 only when `i_Switch_1` and `i_Switch_2` are both 1.
 This means that you will need to push *both* of those buttons down to get the LED to illuminate.
 
-## VHDL
+### VHDL
 
 ```vhdl
 library ieee;
@@ -133,7 +156,7 @@ This is known as a *logical operator*.
 In the code above, `o_LED_1` will be 1 only when `i_Switch_1` and `i_Switch_2` are both 1.
 This means that you will need to push *both* of those buttons down to get the LED to illuminate.
 
-## Building your design and Programming your FPGA
+### Building your design and Programming your FPGA
 
 Your code is complete. Now you need to build the bitstream and program your FPGA. 
 This follows the exact same process as the first project.
@@ -176,7 +199,7 @@ Distribution of All Consumed Luts 1 = 1
 Mapper successful!
 ```
 
-## Tests
+### Tests
 
 After programming your board, hold both `SW1` and `SW2` and the `LED D1` should illuminate! 
 You'll notice that D2, D3, and D4 are always on, that's OK. Congratulations, you now know what a LUT is! 
@@ -194,8 +217,9 @@ My finger holds both `SW1` and `SW2` illuminates `LED D1`:
 
 In this project we didn't use LED `D2`, `D3` and `D4`, therefore no state has been defined
 in our program. In that case FPGA does not set a defined state for these outputs
-and LEDs are an undefined state and it can been seen on your Go Board: 
-LED `D2`, `D3` and `D4` are light up a little bit:
+and LEDs are in an undefined state and it can been seen on your Go Board: 
+LED `D2`, `D3` and `D4` are light up a little bit like they are not fully powered.
+Check LED `D2`, `D3` and `D4` versus POWER `C5` LED:
 
 ![Undefined State](./img/project_2/undefined_leds.png)
 
@@ -205,7 +229,7 @@ LED `D2`, `D3` and `D4` are light up a little bit:
 
 With your previous `AND` Gate, initialize output of LED `D2`, `D3` and `D4` to 0 to get a clean output state.
 
-### Verilog
+#### Verilog
 
 Let's look at the Verilog code for this design.
 
@@ -227,7 +251,7 @@ endmodule
 ```
 Preconfigured project is located in [projecs/project_2/verilog/Project2_OR_Gate_Project](../projects/project_2/verilog/Project2_Or_Gate_LUT)
 
-### VHDL
+#### VHDL
 
 ```vhdl
 library ieee;
@@ -257,6 +281,13 @@ end RTL;
 ```
 Preconfigured project is located in [projecs/project_2/vhdl/Project2_OR_Gate_Project](../projects/project_2/vhdl/Project2_OR_Gate_Project)
 
+#### Build and Test
+
+After programming your board, output LED `D2`, `D3` and `D4` should be off.
+
+![D2, D3 and D4 Initialization](./img/project_2/d2_d3_d4_init.png)
+
+
 ### AND, NAND, OR and NOR Implementation
 
 Program an `AND`, `NAND`, `OR` and `NOR` using switches `SW1` and `SW2` as input:
@@ -272,7 +303,7 @@ Program an `AND`, `NAND`, `OR` and `NOR` using switches `SW1` and `SW2` as input
 
 **Truth Table - SW1 NAND SW2 > LED D2**:
 
-| Input SW1  | Input SW2 | Output LED D1  |
+| Input SW1  | Input SW2 | Output LED D2  |
 | :----: | :----: | :-----: |
 | 0 | 0 | 1 |
 | 0 | 1 | 1 |
@@ -281,7 +312,7 @@ Program an `AND`, `NAND`, `OR` and `NOR` using switches `SW1` and `SW2` as input
 
 **Truth Table - SW1 OR SW2 > LED D3**:
 
-| Input SW1  | Input SW2 | Output LED D1  |
+| Input SW1  | Input SW2 | Output LED D3  |
 | :----: | :----: | :-----: |
 | 0 | 0 | 0 |
 | 0 | 1 | 1 |
@@ -290,7 +321,7 @@ Program an `AND`, `NAND`, `OR` and `NOR` using switches `SW1` and `SW2` as input
 
 **Truth Table - SW1 NOR SW2 > LED D4**:
 
-| Input SW1  | Input SW2 | Output LED D1  |
+| Input SW1  | Input SW2 | Output LED D4  |
 | :----: | :----: | :-----: |
 | 0 | 0 | 1 |
 | 0 | 1 | 0 |

@@ -18,6 +18,7 @@ Support [NandLand via Patreon](https://www.patreon.com/user?u=2732133)
 ## License
 
 MIT License, Copyright (c) 2013-2020 Nandland.com
+[See LICENSE file](./LICENSE) 
 
 ## GoBoard Features
 
@@ -71,7 +72,7 @@ Other video related to FPGA can be found at [NandLand Youtube Channel](https://w
 - [Project 1 - Switches and LEDs](./docs/project_1.md)
 - [Project 2 - The Look-Up Table (LUT)](./docs/project_2.md)
   - Additional Exercises
-     - [Initialize D2,D3 and D4](./docs/project_2.md#and-gate-with-led-d2-d3-and-d4-initialization)
+     - [Initialize D2, D3 and D4](./docs/project_2.md#and-gate-with-led-d2-d3-and-d4-initialization)
      - [AND, NAND, OR and NOR](./docs/project_2.md#and-nand-or-and-nor-implementation)
      - [XOR and XNOR](./docs/project_2.md#xor-and-xnor-implementation) 
 - [Project 3 - The Flip-Flop (AKA Register)](./docs/project_3.md)
