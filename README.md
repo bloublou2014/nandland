@@ -73,7 +73,7 @@ Other video related to FPGA can be found at [NandLand Youtube Channel](https://w
   - Additional Exercises
      - [Initialize D2,D3 and D4](./docs/project_2.md#and-gate-with-led-d2-d3-and-d4-initialization)
      - [AND, NAND, OR and NOR](./docs/project_2.md#and-nand-or-and-nor-implementation)
-     - [XOR and XNOR](./docs/project_2.md#xor-and-nxor-implementation) 
+     - [XOR and XNOR](./docs/project_2.md#xor-and-xnor-implementation) 
 - [Project 3 - The Flip-Flop (AKA Register)](./docs/project_3.md)
 - [Project 4 - Debounce A Switch](./docs/project_4.md)
 - [Project 5 - Seven Segment Display](./docs/project_5.md)
