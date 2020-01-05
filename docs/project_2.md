@@ -249,7 +249,7 @@ module And_Gate_With_Init_Project
  
 endmodule
 ```
-Preconfigured project is located in [projecs/project_2/verilog/Project2_OR_Gate_Project](../projects/project_2/verilog/Project2_Or_Gate_LUT)
+Preconfigured project is located in [projecs/project_2/verilog/Project2_And_Gate_With_Init_LUT](../projects/project_2/verilog/Project2_And_Gate_With_Init_LUT)
 
 #### VHDL
 
@@ -279,7 +279,7 @@ begin
   o_LED_4 <= 0;
 end RTL;
 ```
-Preconfigured project is located in [projecs/project_2/vhdl/Project2_OR_Gate_Project](../projects/project_2/vhdl/Project2_OR_Gate_Project)
+Preconfigured project is located in [projecs/project_2/vhdl/Project2_And_Gate_With_Init_LUT](../projects/project_2/vhdl/Project2_And_Gate_With_Init_LUT)
 
 #### Build and Test
 
@@ -448,7 +448,7 @@ module XOr_Gates_Project
 
 endmodule
 ```
-Preconfigured project is located in [projecs/project_2/verilog/XOr_LUT](../projects/project_2/verilog/XOr_LUT)
+Preconfigured project is located in [projecs/project_2/verilog/XOr_Gates_Project](../projects/project_2/verilog/XOr_Gates_Project)
 
 > In Verilog:
 > - `XOR` operator is represented by `^` 
@@ -479,7 +479,7 @@ begin
   o_LED_2 <= i_Switch_1 xnor i_Switch_2;  
 end RTL;
 ```
-Preconfigured project is located in [projecs/project_2/vhdl/XOr_LUT](../projects/project_2/vhdl/XOr_LUT)
+Preconfigured project is located in [projecs/project_2/vhdl/XOr_Gates_Project](../projects/project_2/vhdl/XOr_Gates_Project)
 
 > In VHDL:
 > - `XOR` operator is represented by `xor`
