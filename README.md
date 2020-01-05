@@ -72,8 +72,8 @@ Other video related to FPGA can be found at [NandLand Youtube Channel](https://w
 - [Project 2 - The Look-Up Table (LUT)](./docs/project_2.md)
   - Additional Exercises
      - [Initialize D2,D3 and D4](./docs/project_2.md#and-gate-with-led-d2-d3-and-d4-initialization)
-     - [AND, NAND, OR and NOR](./docs/project_2.md#implement-and-nand-or-and-nor)
-     - [XOR and NXOR](./docs/project_2.md#implement-a-xor-and-nxor) 
+     - [AND, NAND, OR and NOR](./docs/project_2.md#and-nand-or-and-nor-implementation)
+     - [XOR and XNOR](./docs/project_2.md#xor-and-nxor-implementation) 
 - [Project 3 - The Flip-Flop (AKA Register)](./docs/project_3.md)
 - [Project 4 - Debounce A Switch](./docs/project_4.md)
 - [Project 5 - Seven Segment Display](./docs/project_5.md)

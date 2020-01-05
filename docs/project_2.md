@@ -385,7 +385,7 @@ After programming your board, combine `SW1` and `SW2` to produce output LED  `D1
 
 ![And Nand Or Nor](./img/project_2/anon_tests.gif)
 
-### Implement a XOR and XNOR
+### XOR and XNOR Implementation
 
 Program an `XOR`: 
 - pushing `SW1` or `SW2` the `LED D1` should illuminate.
