@@ -374,26 +374,96 @@ Preconfigured project is located in [projecs/project_2/vhdl/ANON_LUT](../project
 
 #### Build and Test
 
+After programming your board, combine `SW1` and `SW2` to produce output LED  `D1`, `D2`, `D3` and `D4`.
 
-**in progress**
+| Input SW1  | Input SW2 | Output And LED D1  | Output Nand LED D2  | Output Or LED D3  | Output Nor LED D4  |
+| :----: | :----: | :-----: | :-----: | :-----: | :-----: |
+| 0 | 0 | 0 | 1 | 0 | 1 |
+| 0 | 1 | 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 1 | 0 |
+| 1 | 1 | 1 | 0 | 1 | 0 |
 
+![And Nand Or Nor](./img/project_2/anon_tests.gif)
 
-### Implement a XOR and NXOR
+### Implement a XOR and XNOR
 
 Program an `XOR`: 
 - pushing `SW1` or `SW2` the `LED D1` should illuminate.
 - pushing none or both `SW1` and `SW2` and the `LED D1` should *not* illuminate.
 
-| Input SW1  | Input SW2 | Output LED D1  |
-| :----: | :----: | :-----: |
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
+| Input SW1  | Input SW2 | Output XOR LED D1  | Output XNOR LED D2  |
+| :----: | :----: | :-----: | :-----: |
+| 0 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
 
 
+#### Verilog
 
-**in progress**
+Let's look at the Verilog code for this design.
 
+```verilog
+module XOr_Gates_Project
+    (input i_Switch_1,
+     input i_Switch_2,
+     output o_LED_1,
+     output o_LED_2);
 
+    // XOR
+    assign o_LED_1 = i_Switch_1 ^ i_Switch_2;
+    // NXOR
+    assign o_LED_2 = ~(i_Switch_1 ^  i_Switch_2);
+
+endmodule
+```
+Preconfigured project is located in [projecs/project_2/verilog/XOr_LUT](../projects/project_2/verilog/XOr_LUT)
+
+> In Verilog:
+> - `XOR` operator is represented by `^` 
+> - `NOT` operator is represented by `~` 
+
+#### VHDL
+
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity XOr_Gate_Project is
+  port (
+    -- Push-Button Switches:
+    i_Switch_1 : in std_logic;
+    i_Switch_2 : in std_logic;
+
+    -- LED Pin:
+    o_LED_1 : out std_logic;
+    o_LED_2 : out std_logic
+    );
+end entity XOr_Gate_Project;
+
+architecture RTL of XOr_Gate_Project is
+begin
+  o_LED_1 <= i_Switch_1 xor i_Switch_2;
+  -- could also be: o_LED_2 <= not (i_Switch_1 xor i_Switch_2);
+  o_LED_2 <= i_Switch_1 xnor i_Switch_2;  
+end RTL;
+```
+Preconfigured project is located in [projecs/project_2/vhdl/XOr_LUT](../projects/project_2/vhdl/XOr_LUT)
+
+> In VHDL:
+> - `XOR` operator is represented by `xor`
+> - `XNOR` operator is represented by `xnor`
+ 
+#### Build and Test
+
+After programming your board, combine `SW1` and `SW2` to produce output LED  `D1` and `D2`.
+
+| Input SW1  | Input SW2 | Output Xor LED D1  | Output Xnor LED D2  |
+| :----: | :----: | :-----: | :-----: |
+| 0 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 1 |
+
+![Xor Xnor](./img/project_2/xor_xnor_tests.gif)
  
