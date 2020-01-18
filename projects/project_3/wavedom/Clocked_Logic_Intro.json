@@ -1,0 +1,10 @@
+{signal: [
+  {name: 'i_Clk',      wave: 'P.....|...'},  
+  {name: 'i_Switch_1', wave: '0.1..0|1.0'},
+  {},
+  {name: 'r_Switch_1', wave: '1.....|01.'},
+  {name: 'r_LED_1',    wave: '1.....|01.'},
+  {},
+  {name: 'o_LED_1',    wave: '0.1..0|1.0'},
+],
+  config: { hscale: 2 }}

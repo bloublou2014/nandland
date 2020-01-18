@@ -5,9 +5,19 @@
 - Preconfigured project is located in [projecs/project_1](../projects/project_1)
 - Precompiled Bin is located in [projecs/project_1/bin](../projects/project_1/bin)
 
-[![Nandland Go Board Project 1 - Switches and LEDs](http://img.youtube.com/vi/l_eo21vHxw0/0.jpg)](https://www.youtube.com/watch?v=l_eo21vHxw0)
+## Table of Contents
+
+- [How Boolean Algebra is Actually Performed on an FPGA](#building-your-fpga-design)
+- [Project Description](#project-description)
+- [Project Design](#project-design)
+  - [Verilog](#verilog)
+  - [VHDL](#vhdl)
+  - [Building your design and Programming your FPGA](#building-your-design-and-programming-your-fpga)
+  - [Go Board Project 1 Completion!](#go-board-project-1-completion)
 
 ## Project Description
+
+[![Nandland Go Board Project 1 - Switches and LEDs](http://img.youtube.com/vi/l_eo21vHxw0/0.jpg)](https://www.youtube.com/watch?v=l_eo21vHxw0)
 
 Now it's time to get cracking! The first project that we are going to do is going to be as simple as possible.
 All we are going to do is program the FPGA to perform one task: 

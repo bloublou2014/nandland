@@ -149,7 +149,7 @@ begin
   o_LED_1 <= i_Switch_1 and i_Switch_2;
 end RTL;
 ```
-Preconfigured project is located in [projecs/project_2/verilog/Project2_And_Gate_LUT](../projects/project_2/verilog/Project2_And_Gate_LUT)
+Preconfigured project is located in [projecs/project_2/vhdl/Project2_And_Gate_LUT](../projects/project_2/vhdl/Project2_And_Gate_LUT)
 
 In the VHDL code above, we have introduced our first operator, the keyword `and`.
 This is known as a *logical operator*. 
@@ -222,6 +222,8 @@ LED `D2`, `D3` and `D4` are light up a little bit like they are not fully powere
 Check LED `D2`, `D3` and `D4` versus POWER `C5` LED:
 
 ![Undefined State](./img/project_2/undefined_leds.png)
+
+From a cosmetic point of view, to get a clean output state it's possible to set LED `D2`, `D3` and `D4` to 0 by default.
 
 ## Additional Exercises
 
