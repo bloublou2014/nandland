@@ -1,0 +1,10 @@
+{
+  signal: [
+    { name: "Clk", wave: "P.." },
+    { name: "D", wave: "0a.", node: '.a.' },
+    { name: "Q", wave: "0.1", node: '..b' }
+  ],
+  edge: [
+    'a~>b'
+  ]
+}
