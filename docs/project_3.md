@@ -89,9 +89,11 @@ of the time this will be the *rising edge* (when the clock goes from 0 to 1).
 
 > with a clock:
 > ***rising edge*** is a synonym of positive edge and named `posedge`
+>
 > ![posedge](./img/project_3/posedge.png)
 >
 > ***falling edge*** is a synonym of negative edge and named `negedge`
+>
 > ![negedge](./img/project_3/negedge.png)
 
 
